@@ -1,0 +1,64 @@
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Segoe UI", sans-serif;
+    -webkit-user-drag: none;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siege_logo {
+    position: fixed;
+    top: 5%;
+    height: 140px;
+}
+
+.vertical-container,
+.horizontal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.vertical-container { flex-direction: column }
+.horizontal-container { flex-direction: row }
+
+.container-item {
+    text-align: center;
+    color: rgb(254, 254, 254);
+}
+
+.glitch-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.glitch-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/mute_icon.png') center/cover no-repeat;
+    z-index: 1;
+    opacity: 0;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
+}
+
+#mute_icon {
+    width: 75px;
+    height: 75px;
+    cursor: pointer
+}

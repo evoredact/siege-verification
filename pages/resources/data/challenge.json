@@ -1,0 +1,32 @@
+[
+    {
+        "question": "You have defuser, enemy in another plant, what you gonna do?",
+        "answers": ["Rush into OPFOR", "Plant the defuser in safe spot"],
+        "correctAnswerIndex": 1
+    },
+    {
+        "question": "You see an OPFOR in plant rotate, what you gonna do?",
+        "answers": ["Turn 180 and kill teammate because he's scared you", "Kill the OPFOR"],
+        "correctAnswerIndex": 1
+    },
+    {
+        "question": "You are on drone phase, your next step ...",
+        "answers": ["Drone into the site", "Watch tiktok with activated microphone"],
+        "correctAnswerIndex": 0
+    },
+    {
+        "question": "77 + 33 = 100?",
+        "answers": ["Yes", "No"],
+        "correctAnswerIndex": 1
+    },
+    {
+        "question": "OPFOR is within 5 meters of you, where you gonna shoot him?",
+        "answers": ["In a head", "Spray in legs"],
+        "correctAnswerIndex": 0
+    },
+    {
+        "question": "You are on defending site and the round started, what will you do?",
+        "answers": ["Reinforce and setup the site", "Roam on different half of the map"],
+        "correctAnswerIndex": 0
+    }
+]

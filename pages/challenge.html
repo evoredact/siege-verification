@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/challenge.css">
+</head>
+<body>
+    <img class="background-image" src="resources/images/operators.jpg" alt="Background">
+    <div class="dark-overlay"></div>
+
+    <img class="siege_logo" src="resources/images/siege_logo.png" alt="Siege Logo">
+
+    <div class="vertical-container">
+        <h1 class="container-item" id="question" style="font-size: 24px">GG</h1>
+        <div class="container-item" id="image-challenge"></div>
+        <div class="horizontal-container" id="answers">
+
+        </div>
+    </div>
+
+    <h1 id="shader-count" style="position: fixed; font-size: 15px; bottom: 3%; color: rgb(255, 0, 0)"></h1>
+    <h1 style="position: fixed; font-size: 15px; bottom: 0; color: rgb(126, 0, 0)">Every your miss costs precompiled shaders. Or even irreversible consequences.</h1>
+
+    <audio id="audioPlayer" loop autoplay>
+        <source src="resources/sounds/theme.ogg" type="audio/mp3">
+        idk why it happened
+    </audio>
+    <script src="resources/js/challenge.js" defer></script>
+    <script>
+        const audio = document.getElementById('audioPlayer');
+        audio.volume = 0.15;
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+    "name": "siege-verification",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder --win portable",
+        "publish": "electron-builder --publish always"
+    },
+    "files": [
+        "index.js",
+        "preload.js",
+        "assets/**/*",
+        "pages/**/*",
+        "node_modules/**/*"
+    ],
+    "build": {
+        "appId": "org.redact.siege_verification",
+        "productName": "Verification",
+        "win": {
+            "publisherName": "EvoRedact",
+            "icon": "assets/icon.ico",
+            "target": [
+                "portable"
+            ]
+        },
+        "portable": {
+            "artifactName": "verification_portable.exe"
+        }
+    },
+    "author": "EvoRedact",
+    "license": "GPL-3.0-or-later",
+    "description": "",
+    "devDependencies": {
+        "electron": "^33.3.1",
+        "electron-builder": "^25.1.8",
+        "electron-reloader": "^1.2.3",
+        "electron-updater": "^6.3.9"
+    },
+    "dependencies": {
+        "@node-steam/vdf": "^2.2.0",
+        "regedit": "^5.1.3"
+    }
+}
